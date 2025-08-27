@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: myapp-service
   labels:
-    app: myapp-service
+    app: myapp
     type: front-end
 spec:
   type: NodePort
@@ -12,4 +12,4 @@ spec:
       port: 80
       nodePort: 30008
   selector:
-    app: myapp01
+    app: myapp
