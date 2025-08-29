@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod01
+  labels:
+    app: myapp01
+    type: front-end
+    pepito: perez
+    paplo: ramirez
+    minikube: hola
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
+  nodeName: minikube
